@@ -3,11 +3,12 @@
 <head>
 </head>
 <body>
-<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSduJiKcQlvTq6TIvonaMgXBxT3y3FdlU--htR3WBfKM9XV3ew/viewform?embedded=true"
-  width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"
-  style="margin-left: -20px;">Loading…</iframe>
+<iframe id="form" style="border:0px; margin-left:-20px; margin-right:-20px;" width="100%" height="100%"
+  src="https://docs.google.com/forms/d/e/1FAIpQLSduJiKcQlvTq6TIvonaMgXBxT3y3FdlU--htR3WBfKM9XV3ew/viewform?embedded=true" />
 <script type="text/javascript">
-  document.getElementById("form").setAttribute("height", document.documentElement.scrollHeight - 50);
+  let form = document.getElementById("form");
+  form.setAttribute("height", document.documentElement.scrollHeight - 40);
+  form.setAttribute("height", document.documentElement.scrollWidth + 40);
 </script>
 </body>
 </html>
