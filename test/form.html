@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://raw.githubusercontent.com/hashchange/jquery.documentsize/refs/heads/master/src/jquery.documentsize.js" />
 </head>
 <body>
 <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSduJiKcQlvTq6TIvonaMgXBxT3y3FdlU--htR3WBfKM9XV3ew/viewform?embedded=true"
   width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"
   style="margin-left: -20px;">Loading…</iframe>
 <script type="text/javascript">
-  document.getElementById("form").setAttribute("height", document.documentElement.scrollHeight);
+  //document.getElementById("form").setAttribute("height", document.documentElement.scrollHeight);
+  document.getElementById("form").setAttribute("height", $.documentHeight);
 </script>
 </body>
 </html>
